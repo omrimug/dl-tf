@@ -23,7 +23,7 @@ for example, a change merged to the **dev** folder (env) will automatically trig
 
 <h4>Separating Modules and Resources</h4>
 Since complete isolation between environments and companies is required, and each may have different configs, settings and values, I've created generic resources under the **modules** directory. These resources will be used by all envs and deployments.
-</br>
+
 **Pros:**
   1. Each env deployment will only provide the required values and will not implement any code changes
   
