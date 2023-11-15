@@ -1,7 +1,16 @@
 
-module "dl-tf-gke-cluster-namespaces" {
+module "dl-tf-gke-cluster-namespace-services" {
   source   = "../../../modules/gcp/gke/namespace"
-  for_each = toset(local.namespaces)
 
-  name = each.value
+  name = "services"
+  zone = local.cluster_location
+  cluster_name = module.dl-tf-gke-cluster.cluster_name
+}
+
+module "dl-tf-gke-cluster-namespace-monitoring" {
+  source   = "../../../modules/gcp/gke/namespace"
+
+  name = "monitoring"
+  zone = local.cluster_location
+  cluster_name = module.dl-tf-gke-cluster.cluster_name
 }

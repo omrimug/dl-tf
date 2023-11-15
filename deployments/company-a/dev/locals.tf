@@ -18,10 +18,4 @@ locals {
   machine_type       = "e2-small"
   service_account_id = "kubernetes"
   oauth_scopes       = ["https://www.googleapis.com/auth/cloud-platform"]
-
-  # Namespace
-  namespaces = [
-    "services",
-    "monitoring"
-  ]
 }

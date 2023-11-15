@@ -42,3 +42,7 @@ resource "google_container_cluster" "dl-tf-cluster" {
 output "cluster_id" {
   value = google_container_cluster.dl-tf-cluster.id
 }
+
+output "cluster_name" {
+  value = google_container_cluster.dl-tf-cluster.name
+}
