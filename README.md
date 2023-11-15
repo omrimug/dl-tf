@@ -18,8 +18,6 @@ for exmaple, dev environment might have some infrastructure which is unique to t
 2. May be used more easily if a GitOps approach is to be taken.
 for example, a change merged to the **dev** folder (env) will automatically trigger a deployment for its corresponding environment.
 
-3. Workspaces are ???
-
 
 <h4>Separating Modules and Resources</h4>
 Since complete isolation between environments and companies is required, and each may have different configs, settings and values, I've created generic resources under the **modules** directory. These resources will be used by all envs and deployments.
